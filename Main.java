@@ -8,8 +8,8 @@ public class Main {
         Livro l2 = new Livro(2, "Código Limpo", "Robert C. Martin", true);
 
         // 3. Cadastramos os livros no sistema
-        minhaBiblioteca.CadastrarLivro(l1);
-        minhaBiblioteca.CadastrarLivro(l2);
+        minhaBiblioteca.cadastrarLivro(l1);
+        minhaBiblioteca.cadastrarLivro(l2);
 
         // 4. Testamos a lógica de empréstimo
         System.out.println("--- Teste de Empréstimo ---");
@@ -17,4 +17,5 @@ public class Main {
         minhaBiblioteca.emprestar(1); // Deve dizer que já está emprestado
         minhaBiblioteca.emprestar(99); // Deve dizer que não encontrou
     }
+
 }
